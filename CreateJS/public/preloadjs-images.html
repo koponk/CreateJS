@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Preload Images example</title>
+	
+	<!-- We also provide hosted minified versions of all CreateJS libraries.  http://code.createjs.com -->    
+	<script type="text/javascript" src="javascripts/easeljs-0.5.0.min.js"></script>		
+	<script type="text/javascript" src="javascripts/tweenjs-0.3.0.min.js"></script>	
+	<script type="text/javascript" src="javascripts/preloadjs-0.2.0.min.js"></script>	
+	<script type="text/javascript" src="javascripts/preloadjs-images.js"></script>
+	<script type="text/javascript" src="javascripts/jquery-1.8.2.min.js"></script>	
+
+	<link rel="stylesheet" href="./assets/demoStyles.css" />
+</head>
+
+<body>
+
+	<header id="header" class="PreloadJS">
+	    <h1><span class="text-product">Preload<strong>JS</strong></span> Image Gallery</h1>
+	    <p>This sample loads a number of images, and adds them to a canvas stage when they are complete. Click the image
+		    to view the next one. Note that when loading images locally, you need to ensure that PreloadJS
+		    uses tag loading to avoid cross-origin errors. Mouse interaction on images may not work locally either.</p>
+	</header>
+
+    <canvas id="myCanvas" width="960" height="400"></canvas><br/>
+</body>
+</html>

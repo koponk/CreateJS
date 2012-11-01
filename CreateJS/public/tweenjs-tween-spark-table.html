@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TweenJS Example: Spark Demo</title>
+
+	<link rel="stylesheet" href="assets/demoStyles.css"/>
+	
+	<!-- We also provide hosted minified versions of all CreateJS libraries. http://code.createjs.com -->
+	<script type="text/javascript" src="javascripts/easeljs-0.5.0.min.js"></script>	
+	<script type="text/javascript" src="javascripts/tweenjs-0.3.0.min.js"></script>
+	<script type="text/javascript" src="javascripts/tweenjs-tween-spark-table.js"></script>
+	
+	<style type="text/css">
+		#eases {
+			width: 200px;
+			height: 400px;
+			padding: 5px;
+			border-left: 2px solid #777;
+			position: absolute;
+			left: 755px;
+		}
+		#eases SPAN {
+			font-weight: bold;
+			clear: left;
+			display: block;
+			padding-top: 10px;
+		}
+		#eases A {
+			float:left;
+			padding: 1px 3px;
+		}
+		#eases A:after {
+			content: ", ";
+		}
+		#eases A:last-child:after {
+			content: "";
+		}
+		#eases A.selected {
+			background-color: #f90;
+			color: #333;
+		}
+	</style>
+
+</head>
+<body style="background-color:#000000"; >
+
+	<header id="header" class="TweenJS">
+		<h1><span class="text-product">Tween<strong>JS</strong></span> Spark Table</h1>
+		<p>Preview a number of different ease functions.</p>
+	</header>
+
+	<div id="eases"></div>
+	<canvas id="testCanvas" width="960" height="400"></canvas>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PreloadJS: Multimedia Preload Example</title>
+		
+	<script type="text/javascript" src="javascripts/soundjs-0.3.0.min.js"></script>
+	<script type="text/javascript" src="javascripts/preloadjs-0.2.0.min.js"></script>
+	<script type="text/javascript" src="javascripts/preloadjs-media-grid.js"></script>
+
+	<!-- We also provide hosted minified versions of all CreateJS libraries.
+	http://code.createjs.com -->
+
+
+	<link rel="stylesheet" type="text/css" href="./assets/demoStyles.css" />
+	<style>
+	   .gridBox {
+			float: left;
+			width: 150px;
+			height: 123px;
+			background-color: #363535;
+			border-width: thin;
+			color: #FFF0EE;
+			margin: 1px;
+		}
+	   .gridBox:hover {  background-color: #111111; }
+
+	   #imageGrid {
+		   width: 960px;
+	   }
+		LABEL {
+			position: relative;
+			top: 10px; left: 10px;
+			font-family: sans-serif; font-size: 12px;
+		}
+	</style>
+</head>
+
+<body>
+
+	<header id="header" class="PreloadJS">
+		<h1><span class="text-product">Preload<strong>JS</strong></span> Example: Media Grid</h1>
+		<p>PreloadJS can load a variety of media. In this example, click each example to load its related item.
+			Once the item is loaded, it will display (image), play (sound), apply to the document (css), or display an alert (script).
+			Note that when loading images and sounds locally, you need to ensure that PreloadJS uses tag loading to avoid
+			cross-origin errors. Other media types will not load locally.</p>
+	</header>
+
+	<div id="imageGrid">
+		<div id="assets/BlueBird.png" onclick="mediaGrid.loadAsset(this)" class="gridBox" style="width: 300px; height: 400px">
+			<label>Image</label>
+		</div>
+
+		<div id="assets/bg.css" onclick="mediaGrid.loadAsset(this)" class="gridBox">
+			<label>CSS - Background</label>
+		</div>
+
+	   <div id="assets/alert1.js" onclick="mediaGrid.loadAsset(this)" class="gridBox">
+			<label>JavaScript</label>
+		</div>
+
+		<div id="assets/grant.xml" onclick="mediaGrid.loadAsset(this)" class="gridBox">
+			<label>XML</label>
+		</div>
+
+		<div id="assets/Texas.jpg" onclick="mediaGrid.loadAsset(this)" class="gridBox" style="width:200px; height:248px; float: right;">
+			<label>Image</label>
+		</div>
+
+		<div id="assets/grant.json" onclick="mediaGrid.loadAsset(this)" class="gridBox">
+			<label>JSON</label>
+		</div>
+
+		<div id="assets/font.css" onclick="mediaGrid.loadAsset(this)" class="gridBox">
+			<label>CSS - Font Color</label>
+		</div>
+
+		<div id="assets/Thunder.mp3|assets/Thunder.ogg" onclick="mediaGrid.loadAsset(this)" class="gridBox">
+			<label>Audio</label>
+		</div>
+
+		<div id="assets/Autumn.png" onclick="mediaGrid.loadAsset(this)" class="gridBox" style="width:454px; height:150px">
+			<label>Image</label>
+		</div>
+
+		<div id="assets/NoFileHere.png" onclick="mediaGrid.loadAsset(this)" class="gridBox" style="width:200px; height:150px;">
+			<label>Intentionally missing file<br/>to generate error.</label>
+		</div>
+
+	</div>
+
+</body>
+</html>

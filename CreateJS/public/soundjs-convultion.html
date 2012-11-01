@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=9" /> <!-- req for IE 9 else audio tag won't work -->
+	<title>SoundJS: Convolution Example</title>
+
+
+	<script type="text/javascript" src="javascripts/swfobject.js"></script>
+	<script type="text/javascript" src="javascripts/jquery-1.8.2.min.js"></script>
+
+	<!-- We also provide hosted minified versions of all CreateJS libraries. http://code.createjs.com -->	
+	<script type="text/javascript" src="javascripts/preloadjs-0.2.0.min.js"></script>
+	<script type="text/javascript" src="javascripts/soundjs-0.3.0.min.js"></script>
+	<script type="text/javascript" src="javascripts/soundjs-convultion.js"></script>	
+
+	<link rel="stylesheet" type="text/css" href="assets/demoStyles.css"/>
+	<style>
+		p {
+			padding: 10px;
+		}
+		p.item {
+			border-bottom: 1px solid #EEE;
+			padding: 5px;
+			margin: 0;
+		}
+		p.item SPAN {
+			font-weight: bold;
+			color: #333;
+		}
+		p.active {
+			font-weight:bold;
+			background-color: #fca;
+			border-width: 1px;
+			border: 1px solid #ccc;
+		}
+	</style>
+</head>
+
+<body align="center">
+
+	<div id="loader"></div>
+
+	<header id="header" class="SoundJS">
+	    <h1><span class="text-product">Sound<strong>JS</strong></span> Convolution</h1>
+		<p>Click "Run Demo" to see how SoundJS handles a variety of common sound playing situations.</p>
+	</header>
+
+	<div id="content" class="content">
+		<input id="demoStarter" type="button" onclick="begin()" value="Run Demo" />
+		<p id="p00" class="item"><span>0ms</span> - Quiet note, repeating</p>
+		<p id="p01" class="item"><span>0ms</span> - Gull</p>
+		<p id="p02" class="item"><span>150ms</span> - Gull interrupting previous gull</p>
+		<p id="p03" class="item"><span>1000ms</span> - Rat</p>
+		<p id="p04" class="item"><span>1050ms</span> - Rat overlapping prev rat</p>
+		<p id="p05" class="item"><span>2500ms</span> - Note single</p>
+		<p id="p06" class="item"><span>3500ms</span> - Note single overlapping</p>
+		<p id="p07" class="item"><span>4000ms</span> - Pause mid notes</p>
+		<p id="p08" class="item"><span>4500ms</span> - Note, (fails: instances used up)</p>
+		<p id="p09" class="item"><span>8000ms</span> - Resume</p>
+		<p id="p10" class="item"><span>9000ms</span> - Note single</p>
+		<p id="p11" class="item"><span>10000ms</span> - Stop repeating note, letting previous note fade out</p>
+	</div>
+
+	<div id="error">
+		<h1>Sorry!</h1>
+		<p>SoundJS is not currently supported in your browser.</p>
+		<p>We are currently working on support for iOS. Please <a href="http://github.com/CreateJS/SoundJS/issues" target="_blank">log a bug</a>
+			if you see this in any other browsers.</p>
+	</div>
+
+</body>
+</html>

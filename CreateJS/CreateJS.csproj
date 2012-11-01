@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <ProjectGuid>{4F349C9C-FF5D-42A8-9F46-801B79DB5320}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <OutputPath>bin</OutputPath>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UpgradeBackupLocation />
+  </PropertyGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="definitions\createjs\soundjs\FlashPlugin.d.ts" />
+    <TypeScriptCompile Include="definitions\createjs\soundjs\FlashSoundInstance.d.ts" />
+    <TypeScriptCompile Include="definitions\createjs\soundjs\HTMLAudioPlugin.ts" />
+    <TypeScriptCompile Include="definitions\createjs\soundjs\AudioPlugin.d.ts" />
+    <Content Include="definitions\createjs\soundjs\AudioPlugin.js">
+      <DependentUpon>AudioPlugin.d.ts</DependentUpon>
+    </Content>
+    <TypeScriptCompile Include="definitions\createjs\soundjs\HTMLSoundInstance.d.ts" />
+    <Content Include="public\soundjs-convlution.html" />
+    <Content Include="public\soundjs-game.html" />
+    <Content Include="public\soundjs-media-player.html" />
+    <Content Include="public\soundjs-preload-and-play.html" />
+    <Content Include="public\soundjs-sound-grid.html" />
+    <Content Include="public\soundjs-test-suite.html" />
+    <TypeScriptCompile Include="soundjs-convultion.ts" />
+    <Content Include="soundjs-convultion.js">
+      <DependentUpon>soundjs-convultion.ts</DependentUpon>
+    </Content>
+    <Content Include="tweenjs-simple-demo.js">
+      <DependentUpon>tweenjs-simple-demo.ts</DependentUpon>
+    </Content>
+    <Content Include="tweenjs-spark-table.js">
+      <DependentUpon>tweenjs-spark-table.ts</DependentUpon>
+    </Content>
+    <Content Include="tweenjs-tween-spark-table.js">
+      <DependentUpon>tweenjs-tween-spark-table.ts</DependentUpon>
+    </Content>
+    <TypeScriptCompile Include="tweenjs-tween-spark-table.ts" />
+    <TypeScriptCompile Include="tweenjs-spark-table.ts" />
+    <TypeScriptCompile Include="tweenjs-simple-demo.ts" />
+    <TypeScriptCompile Include="definitions\createjs\tweenjs\CSSPlugin.d.ts" />
+    <Content Include="public\tweenjs-example.html" />
+    <Content Include="public\tweenjs-circles.html" />
+    <Content Include="public\tweenjs-css-example.html" />
+    <Content Include="public\tweenjs-simple-demo.html" />
+    <Content Include="public\tweenjs-spark-table.html" />
+    <Content Include="public\tweenjs-tween-spark-table.html" />
+    <TypeScriptCompile Include="tweenjs-css-example.ts" />
+    <TypeScriptCompile Include="tweenjs-circles.ts" />
+    <Content Include="tweenjs-circles.js">
+      <DependentUpon>tweenjs-circles.ts</DependentUpon>
+    </Content>
+    <Content Include="tweenjs-css-example.js">
+      <DependentUpon>tweenjs-css-example.ts</DependentUpon>
+    </Content>
+    <Content Include="tweenjs-css-example.min.js">
+      <DependentUpon>tweenjs-css-example.ts</DependentUpon>
+    </Content>
+    <Content Include="tweenjs-example.js">
+      <DependentUpon>tweenjs-example.ts</DependentUpon>
+    </Content>
+    <TypeScriptCompile Include="tweenjs-example.ts" />
+    <TypeScriptCompile Include="definitions\createjs\tweenjs\Tween.d.ts" />
+    <TypeScriptCompile Include="definitions\createjs\tweenjs\Timeline.d.ts" />
+    <TypeScriptCompile Include="definitions\createjs\tweenjs\Ease.d.ts" />
+    <TypeScriptCompile Include="definitions\createjs\easeljs\display\Bitmap.d.ts" />
+    <Content Include="definitions\createjs\easeljs\display\BitmapAnimation.d.ts" />
+    <Content Include="definitions\createjs\easeljs\display\Container.d.ts" />
+    <Content Include="definitions\createjs\easeljs\display\DisplayObject.d.ts" />
+    <Content Include="definitions\createjs\easeljs\display\DOMElement.d.ts" />
+    <Content Include="definitions\createjs\easeljs\display\Graphics.d.ts" />
+    <Content Include="definitions\createjs\easeljs\display\MovieClip.d.ts" />
+    <Content Include="definitions\createjs\easeljs\display\Shadow.d.ts" />
+    <Content Include="definitions\createjs\easeljs\display\Shape.d.ts" />
+    <Content Include="definitions\createjs\easeljs\display\SpriteSheet.d.ts" />
+    <Content Include="definitions\createjs\easeljs\display\Stage.d.ts" />
+    <Content Include="definitions\createjs\easeljs\display\Text.d.ts" />
+    <Content Include="definitions\createjs\easeljs\events\MouseEvent.d.ts" />
+    <Content Include="definitions\createjs\easeljs\filters\AlphaMapFilter.d.ts" />
+    <Content Include="definitions\createjs\easeljs\filters\AlphaMaskFilter.d.ts" />
+    <Content Include="definitions\createjs\easeljs\filters\BoxBlurFilter.d.ts" />
+    <Content Include="definitions\createjs\easeljs\filters\ColorFilter.d.ts" />
+    <Content Include="definitions\createjs\easeljs\filters\ColorMatrix.d.ts" />
+    <Content Include="definitions\createjs\easeljs\filters\ColorMatrixFilter.d.ts" />
+    <Content Include="definitions\createjs\easeljs\filters\Filter.d.ts" />
+    <Content Include="definitions\createjs\easeljs\geom\Matrix2D.d.ts" />
+    <Content Include="definitions\createjs\easeljs\geom\Point.d.ts" />
+    <Content Include="definitions\createjs\easeljs\geom\Rectangle.d.ts" />
+    <Content Include="definitions\createjs\easeljs\ui\Touch.d.ts" />
+    <Content Include="definitions\createjs\easeljs\utils\SpriteSheetBuilder.d.ts" />
+    <Content Include="definitions\createjs\easeljs\utils\SpriteSheetUtils.d.ts" />
+    <Content Include="definitions\createjs\easeljs\utils\Ticker.d.ts" />
+    <Content Include="definitions\createjs\easeljs\utils\UID.d.ts" />
+    <Content Include="preloadjs-images.js">
+      <DependentUpon>preloadjs-images.ts</DependentUpon>
+    </Content>
+    <Content Include="preloadjs-images.js.map">
+      <DependentUpon>preloadjs-images.ts</DependentUpon>
+    </Content>
+    <Content Include="preloadjs-media-grid.js">
+      <DependentUpon>preloadjs-media-grid.ts</DependentUpon>
+    </Content>
+    <TypeScriptCompile Include="preloadjs-queue.ts" />
+    <Content Include="preloadjs-queue.js">
+      <DependentUpon>preloadjs-queue.ts</DependentUpon>
+    </Content>
+    <Content Include="public\assets\alert1.js" />
+    <Content Include="public\assets\alert2.js" />
+    <Content Include="public\assets\Autumn.png" />
+    <Content Include="public\assets\bg.css" />
+    <Content Include="public\assets\BlueBird.png" />
+    <Content Include="public\assets\CabinBoy.mp3" />
+    <Content Include="public\assets\demoStyles.css" />
+    <Content Include="public\javascripts\easeljs-0.5.0.min.js" />
+    <Content Include="public\assets\font.css" />
+    <Content Include="public\assets\genericButton.png" />
+    <Content Include="public\assets\genericButtonOver.png" />
+    <Content Include="public\assets\grant.xml" />
+    <Content Include="public\assets\image0.jpg" />
+    <Content Include="public\assets\image1.jpg" />
+    <Content Include="public\assets\image2.jpg" />
+    <Content Include="public\assets\image3.jpg" />
+    <Content Include="public\assets\loader.gif" />
+    <Content Include="public\assets\Nepal.jpg" />
+    <Content Include="public\javascripts\jquery-1.8.2.min.js" />
+    <Content Include="public\javascripts\soundjs-0.3.0.min.js" />
+    <Content Include="public\assets\Texas.jpg" />
+    <Content Include="public\assets\Thunder.mp3" />
+    <Content Include="public\javascripts\tweenjs-0.3.0.min.js" />
+    <Content Include="public\javascripts\preloadjs-0.2.0.min.js" />
+    <Content Include="public\preloadjs-media-grid.html" />
+    <Content Include="public\preloadjs-images.html" />
+    <Content Include="public\preloadjs-queue.html" />
+    <Content Include="public\stylesheets\app.css" />
+    <Content Include="public\index.html" />
+    <TypeScriptCompile Include="definitions\createjs\soundjs\SoundInstance.d.ts" />
+    <TypeScriptCompile Include="definitions\createjs\soundjs\SoundJS.d.ts" />
+    <TypeScriptCompile Include="preloadjs-images.ts" />
+    <TypeScriptCompile Include="preloadjs-media-grid.ts" />
+    <TypeScriptCompile Include="definitions\createjs\preloadjs\AbstractLoader.d.ts" />
+    <TypeScriptCompile Include="definitions\createjs\preloadjs\PreloadJS.d.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="public\assets\grant.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="preloadjs-media-grid.js.map">
+      <DependentUpon>preloadjs-media-grid.ts</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="tweenjs-spark-table.js.map">
+      <DependentUpon>tweenjs-spark-table.ts</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="tweenjs-tween-spark-table.js.map">
+      <DependentUpon>tweenjs-tween-spark-table.ts</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="soundjs-convultion.js.map">
+      <DependentUpon>soundjs-convultion.ts</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>CreateJS</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <PublishDatabases>false</PublishDatabases>
+    <PackageAsSingleFile>false</PackageAsSingleFile>
+    <ExcludeGeneratedDebugSymbol>true</ExcludeGeneratedDebugSymbol>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RunPostBuildEvent>Always</RunPostBuildEvent>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <SaveServerSettingsInUserFile>True</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="BeforeBuild">
+    <Exec Command="&quot;$(PROGRAMFILES)\Microsoft SDKs\TypeScript\0.8.0.0\tsc&quot; @(TypeScriptCompile ->'&quot;%(fullpath)&quot;', ' ')" />
+  </Target>
+</Project>
